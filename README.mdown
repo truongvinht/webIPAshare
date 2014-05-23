@@ -2,3 +2,30 @@ webIPAshare
 ===========
 
 A Website template for creating adhoc IPA sharing for iOS 7.1 (or higher)
+
+
+# How to get it start
+1. clone the project
+2. update the scripts/laun-script.js file at row 14 for your ipa/plist/png file name
+3. create an Apps folder and add the ipa/plist/png to that folder
+4. upload the same plist to the https server and update the plist (in the metadata subdictionary) to that it contains the URL (key: location)
+5. Optional: add comment to the "news"-Tag
+
+
+```XML
+<key>metadata</key>
+<dict>
+	<key>news</key>
+	<string>ANY COMMENT</string>
+	<key>location</key>
+	<string>https://SERVER/APPNAME.plist</string>
+	<key>bundle-identifier</key>
+	<string>APP-BUNDLE</string>
+	<key>bundle-version</key>
+	<string>1.0.0</string>
+	<key>kind</key>
+	<string>software</string>
+	<key>title</key>
+	<string>APP NAME</string>
+</dict>
+```
