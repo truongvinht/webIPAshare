@@ -28,3 +28,6 @@ A Website template for creating adhoc IPA sharing for iOS 7.1 (or higher)
 	<string>APP NAME</string>
 </dict>
 ```
+
+#License
+MIT License (MIT) [a link](http://opensource.org/licenses/MIT)
